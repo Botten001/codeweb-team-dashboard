@@ -1,102 +1,102 @@
 export const summary = {
-  focus: "Build insanely polished sites fast",
-  nextReview: "Monday 09:00",
-  owner: "Mads + Agent"
+  focus: "Polish Codeweb ops stack + client kits",
+  nextReview: "Daily standup 09:00",
+  owner: "Mads & Agent"
 };
 
 export const metrics = [
-  { label: "Active projects", value: 4, delta: "+2 this week" },
-  { label: "Delivered this month", value: 6, delta: "3 ahead of target" },
-  { label: "Avg. turnaround", value: "6.2 days", delta: "Goal: <7 days" },
-  { label: "Pipeline", value: "9 leads", delta: "4 warm / 1 hot" }
+  { label: "Live client builds", value: 3, delta: "+1 this week" },
+  { label: "Sites delivered", value: 2, delta: "Need 2 more for Feb goal" },
+  { label: "Avg. turnaround", value: "6.2 days", delta: "Goal < 7 days" },
+  { label: "Pipeline", value: "5 prospects", delta: "2 ready to close" }
 ];
 
 export const currentProjects = [
   {
-    name: "Lys Studio relaunch",
-    type: "Brand + site",
-    status: "Design sprint",
-    progress: 62,
+    name: "Codeweb marketing site",
+    type: "Internal build",
+    status: "Design polish",
+    progress: 55,
     owner: "Mads",
-    eta: "Feb 24",
-    notes: "Need client copy for hero"
+    eta: "Feb 21",
+    notes: "Need hero copy + case studies"
   },
   {
-    name: "Nordic Builders",
-    type: "Webflow build",
-    status: "Build",
-    progress: 78,
+    name: "Client A — Kyst Bistro",
+    type: "Webflow",
+    status: "Build sprint",
+    progress: 70,
     owner: "Agent",
-    eta: "Feb 19",
-    notes: "Waiting on photo set"
+    eta: "Feb 18",
+    notes: "Waiting on menu photography"
   },
   {
-    name: "Klar Finance",
+    name: "Client B — Atlas Fitness",
     type: "Next.js",
     status: "QA",
-    progress: 90,
+    progress: 88,
     owner: "Mads",
-    eta: "Feb 17",
-    notes: "Legal review Friday"
+    eta: "Feb 16",
+    notes: "Legal review + Stripe test"
   }
 ];
 
 export const finishedProjects = [
   {
-    name: "Vera Clinics",
-    result: "+38% leads",
-    shipped: "Feb 11",
+    name: "Demo — Nordic Builders",
+    result: "+3 inbound leads",
+    shipped: "Feb 12",
     owner: "Agent"
   },
   {
-    name: "Arctic Motion",
-    result: "Brand + site",
-    shipped: "Feb 05",
+    name: "Demo — Vera Clinic",
+    result: "Landing + booking",
+    shipped: "Feb 08",
     owner: "Mads"
   },
   {
-    name: "Linea Homes",
-    result: "Landing sprint",
-    shipped: "Jan 28",
+    name: "Ops dashboard alpha",
+    result: "Internal tool",
+    shipped: "Jan 31",
     owner: "Team"
   }
 ];
 
 export const goals = [
   {
-    title: "4 premium builds / month",
-    progress: 75,
-    target: "3/4 scheduled",
-    owner: "Team"
-  },
-  {
-    title: "$12k MRR",
-    progress: 48,
-    target: "$5.8k locked",
+    title: "4 paid sites / month",
+    progress: 50,
+    target: "2/4 locked",
     owner: "Sales"
   },
   {
-    title: "Launch ops playbook",
-    progress: 30,
-    target: "Need QA + docs",
+    title: "$12k pipeline",
+    progress: 42,
+    target: "$5k committed",
+    owner: "Mads"
+  },
+  {
+    title: "Ops playbook v1",
+    progress: 40,
+    target: "Need QA + templates",
     owner: "Agent"
   }
 ];
 
 export const ideaBacklog = [
   {
-    title: "Client status portal",
-    detail: "Simple login showing milestones, invoices, files",
+    title: "Client portal",
+    detail: "Status, invoices, asset handoff",
     impact: "High"
   },
   {
-    title: "Template library",
-    detail: "Reusable hero/section blocks for faster builds",
+    title: "Section library",
+    detail: "Reusable hero/CTA components",
     impact: "Medium"
   },
   {
-    title: "Mesi Pod",
-    detail: "Weekly Loom update for clients + socials",
+    title: "Automated weekly Loom",
+    detail: "Ops recap auto-shared with clients",
     impact: "Low"
   }
 ];
@@ -105,34 +105,34 @@ export const snapshots = [
   {
     label: "Blockers",
     items: [
-      "Klar Finance legal copy",
-      "Nordic photo approvals",
-      "Ops playbook outline"
+      "Menu photos (Kyst)",
+      "Stripe QA (Atlas)",
+      "Copy for Codeweb hero"
     ]
   },
   {
     label: "Wins",
     items: [
-      "Signed Arctic Motion retainer",
-      "New referral from Vera",
-      "Ops automation POC shipped"
+      "Inbound from LinkedIn post",
+      "Ops dashboard shipped",
+      "Workspace + domains live"
     ]
   }
 ];
 
 export const actions = [
   {
-    title: "Record weekly video update",
+    title: "Finalize Codeweb homepage copy",
     owner: "Mads",
-    due: "Today 17:00"
+    due: "Today"
   },
   {
-    title: "Prep Klar handoff deck",
+    title: "Record Loom for clients",
     owner: "Agent",
     due: "Tomorrow"
   },
   {
-    title: "Book sales calls for Nord pipeline",
+    title: "Prep sales deck template",
     owner: "Team",
     due: "Monday"
   }

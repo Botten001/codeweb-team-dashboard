@@ -29,19 +29,24 @@ export default function Home() {
                 decisions fast, and handoffs clean.
               </p>
             </div>
-            <div className="grid w-full gap-3 rounded-2xl border border-white/30 bg-white/70 p-5 text-sm shadow-sm dark:border-white/5 dark:bg-zinc-900/80 lg:w-auto">
-              <div className="flex justify-between">
-                <span className="text-zinc-500">Focus</span>
-                <span className="font-medium">{summary.focus}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">Next review</span>
-                <span className="font-medium">{summary.nextReview}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">Owners</span>
-                <span className="font-medium">{summary.owner}</span>
-              </div>
+            <div className="grid w-full gap-4 rounded-2xl border border-white/30 bg-white/70 p-5 text-sm shadow-sm dark:border-white/5 dark:bg-zinc-900/80 lg:w-auto">
+              {[
+                { label: "Focus", value: summary.focus },
+                { label: "Next review", value: summary.nextReview },
+                { label: "Owners", value: summary.owner },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="flex flex-col gap-1 text-left"
+                >
+                  <span className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+                    {item.label}
+                  </span>
+                  <span className="text-base font-semibold leading-tight text-zinc-900 dark:text-white">
+                    {item.value}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </header>
