@@ -9,21 +9,19 @@ interface SectionProps {
 
 export function Section({ title, description, children, action }: SectionProps) {
   return (
-    <section className="rounded-2xl border border-white/10 bg-white/70 p-6 shadow-sm backdrop-blur-sm dark:border-white/5 dark:bg-zinc-900/60">
+    <section className="rounded-2xl border border-white/10 bg-[#0e101b]/70 p-6 shadow-[0_20px_80px_rgba(5,6,10,0.45)] backdrop-blur-xl">
       <header className="mb-4 flex items-start justify-between gap-3">
         <div>
-          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          <p className="text-[11px] uppercase tracking-[0.35em] text-white/40">
             {title}
-          </h2>
+          </p>
           {description && (
-            <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-              {description}
-            </p>
+            <p className="mt-1 text-sm text-white/60">{description}</p>
           )}
         </div>
         {action}
       </header>
-      {children}
+      <div className="space-y-4">{children}</div>
     </section>
   );
 }
